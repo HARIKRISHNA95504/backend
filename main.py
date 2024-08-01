@@ -10,7 +10,7 @@ app = FastAPI(docs_url=None)  # Disable the default /docs
 
 @app.get("/api", include_in_schema=False)
 async def custom_swagger_ui_html():
-    return get_swagger_ui_html(openapi_url="/openapi.json", title="API Docs")
+    return get_swagger_ui_html(openapi_url="/openapi.json", title="Skill-Capital API")
 
 DB_HOST = 'localhost'
 DB_NAME = 'postgres'
